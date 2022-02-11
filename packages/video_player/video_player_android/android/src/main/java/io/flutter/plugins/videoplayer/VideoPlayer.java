@@ -139,9 +139,9 @@ final class VideoPlayer {
                 new DefaultDashChunkSource.Factory(mediaDataSourceFactory),
                 new DefaultDataSourceFactory(context, null, mediaDataSourceFactory))
             .createMediaSource(MediaItem.fromUri(uri));
-      case C.TYPE_HLS:
-        return new HlsMediaSource.Factory(mediaDataSourceFactory)
-            .createMediaSource(MediaItem.fromUri(uri));
+//       case C.TYPE_HLS:
+//         return new HlsMediaSource.Factory(mediaDataSourceFactory)
+//             .createMediaSource(MediaItem.fromUri(uri));
       case C.TYPE_OTHER:
         return new ProgressiveMediaSource.Factory(mediaDataSourceFactory)
             .createMediaSource(MediaItem.fromUri(uri));
